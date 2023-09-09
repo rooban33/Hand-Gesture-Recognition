@@ -1,0 +1,125 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+$primary: #0075f6;
+
+body{
+	font-family: $font-primary;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: normal;
+	background: #fafafa;
+	color: lighten($black,50%);
+}
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+button {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: $font-primary;
+	color: $black;
+}
+
+
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+//HEADING SECTION
+.heading-section{
+	font-size: 28px;
+	color: $black;
+	small{
+		font-size: 18px;
+	}
+}
+
+//COVER BG
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.btn {
+	padding: 12px 16px;
+	cursor: pointer;
+	border-width: 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	position: relative;
+	margin-bottom: 20px;
+	@include transition(.3s);
+	&:hover, &:active, &:focus {
+		outline: none !important;
+	}
+	&.btn-primary {
+		background: $primary !important;
+		border-color: $primary !important;
+		color: $white;
+		&:hover,&:focus{
+			border-color: darken($primary,10%) !important;
+			background: darken($primary,10%) !important;
+		}
+	}
+}
+
+.btn-group{
+	.dropdown-menu{
+		border: none;
+		background: $white;
+		-webkit-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+		-moz-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+		box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+		padding: 0;
+		overflow: hidden;
+		.dropdown-item{
+			font-size: 14px;
+			color: rgba(0,0,0,.7);
+			font-weight: 400;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			i{
+				color: rgba(0,0,0,.4);
+			}
+			&:hover, &:focus, &.active{
+				background: $primary;
+				color: $white;
+			}
+		}
+		.dropdown-divider{
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
