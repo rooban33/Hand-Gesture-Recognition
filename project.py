@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import mediapipe as mp
-import tensorflow as tf
 import keyboard
 import time
 from tensorflow.keras.models import load_model
