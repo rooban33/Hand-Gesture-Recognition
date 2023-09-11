@@ -91,12 +91,7 @@ sounddevice==0.4.6
 SQLAlchemy==2.0.7
 stack-data==0.6.2
 starlette==0.27.0
-tensorflow==2.6.0
 tensorboard-data-server==0.7.1
-tensorflow==2.13.0
-tensorflow-estimator==2.13.0
-tensorflow-intel==2.13.0
-tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 threadpoolctl==3.1.0
 tqdm==4.65.0
