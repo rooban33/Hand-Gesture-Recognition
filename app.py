@@ -29,4 +29,4 @@ def stop_gesture_recognition():
         return jsonify({'message': 'Gesture recognition not running'})
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
