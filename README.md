@@ -11,7 +11,7 @@ This project is a gesture recognition application developed using Python, Flask,
 
 1. Clone the repository to your local machine:
 
-    git clone <repository_url>
+    git clone (https://github.com/rooban33/Hand-Gesture-Recognition.git)
     
 
 2. Install the required packages:
